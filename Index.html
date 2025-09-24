@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  
+<body>
+    <body>
+    <script src="script.js" defer></script>
+  <h1>Top Movies</h1>
+  <div id="movie-container"></div>
+  <section id="landing">
+    <nav>
+      <div class="nav__container">
+        <div class="nav__logo--title">ROMBO X MOVIES<img class="logo" src="https://images.unsplash.com/photo-1535016120720-40c646be5580?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="logo_img" alt="LOGO">
+        </div>
+            <ul class="nav__links">
+          <li><a href="#About" class="nav__link">About</a></li>
+          <li><a href="#Blog" class="nav__link">Videos</a></li>
+          <li><a href="#Pricing" class="nav__link">Prices</a></li>
+          <li><a href="#Contactus" class="nav__link">Contact us</a></li>
+          <li><a href="#Login" class="nav__link">Login</a></li>
+          <li><a href="#Signup" class="nav__link nav__link--primary">Sign Up</a></li>
+        </ul>
+                <button class="btn__menu" onclick="openMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="btn__menu--svg">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <div class="modal">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="light___StyledCloseIcon-lj69nl-14 fASujC">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="modal__links">
+                <a class="modal__link">About</a>
+                <a class="modal__link">Blog</a>
+                <a class="modal__link">Pricing</a>
+                <a class="modal__link">Contact Us</a>
+                <a class="modal__link">Login</a>
+                <a class="modal__link modal__link--primary">Sign Up</a>
+            </div>
+        </div>
+
+
+        <section id="header">
+            <div class="container">
+                <div class="row">
+                  <div class="header__description">
+                <h1>
+               INCREDIBLE TOP MOVIES 
+               <span class="blue">TO WATCH NOW.</span>
+                </h1>
+                <p class="header__description--para">
+                    "TOP MOVIES NOW AT YOUR FINGERPRINTS"
+                </p>
+                </div>
+                </div>
+                <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="TOP MOVIES NOW..." />
+            </div>
+                <button class="header__searchbox--btn">WATCH NOW</button>
+               </div>
+               <p class="header__TopMovies--title">OUR TOP MOVIES
+               </p>
+
+
+      <section id="features">
+      <div class="container">
+        <div class="row">
+          <h2 class="section__title">
+            ROMBO X SEARCH <span class="red">RESULTS:</span>
+          </h2>
+         <div class="Movies"></div>
+
+           <div class="movie-grid" id="movie-container"></div>
+           <input type="text" id="searchInput" placeholder="Search for a movie..." />
+           <button onclick="searchMovies()">Search</button>
+             <div class="filter-bar">
+
+             <input type="text" id="searchInput" placeholder="Search by title..." />
+             <select id="genreFilter">
+            <option value="">All Genres</option>
+            <option value="Action">Action</option>
+            <option value="Documentary">Documentary</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Drama">Drama</option>
+       </select>
+         </div>
+
+            <div class="movie">
+              <figure class="movie__img--wrapper">
+                <img class="movie__img" src="https://images.unsplash.com/photo-1561149877-84d268ba65b8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmVzdCUyMG1hcnZlbCUyMHVuaXZlcnNlJTIwbW92aWVzfGVufDB8fDB8fHww " alt="">
+              </figure>
+              <div class="movie__title">
+            ACTION-PACKED
+              </div>
+              <div class="movie__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="movie__description">
+                *SACRIFICE
+                *RISING UP
+                *RESPONSIBILITY
+              </div>
+              <div class="movie__price">
+                <span class="movie__price--normal">$14.00</span> $10.00
+              </div>
+            </div>
+
+                 <div class="movie">
+              <figure class="movie__img--wrapper">
+                <img class="movie__img" src="https://static0.colliderimages.com/wordpress/wp-content/uploads/sharedimages/2024/04/the-deepest-breath-movie-poster.jpg?q=49&fit=contain&w=480&dpr=2" alt="">
+              </figure>
+              <div class="movie__title">
+                DOCUMENTARY
+              </div>
+              <div class="movie__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+                <div class="movie__description">
+                *REAL EVENTS
+                *PEOPLE & LIFE
+                *REALITY
+              </div>
+              <div class="movie__price">
+                <span class="movie__price--normal">$11.00</span>$9.00
+              </div>
+            </div>
+
+                 <div class="movie">
+              <figure class="movie__img--wrapper">
+                <img class="movie__img" src="https://static0.colliderimages.com/wordpress/wp-content/uploads/2025/04/terminator-2_-judgment-day-1991-4-1.jpg?q=70&fit=crop&w=825&dpr=1" alt="">
+              </figure>
+              <div class="movie__title">
+                ADVENTURES
+              </div>
+              <div class="movie__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+                <div class="movie__description">
+                *DISCOVERY
+                *JOURNEY INTO UNKNOWN
+                *PERSONAL GROWTH
+              </div>
+              <div class="movie__price">
+                <span class="movie__price--normal">$10.00</span>$7.00
+              </div>
+            </div>
+
+             <div class="movie">
+              <figure class="movie__img--wrapper">
+                <img class="movie__img" src="https://static0.colliderimages.com/wordpress/wp-content/uploads/2024/08/ted-striker-robert-hays-heavily-sweating-airplane.jpg?q=70&fit=crop&w=825&dpr=1" alt="">
+              </figure>
+              <div class="movie__title">
+                COMEDIES
+              </div>
+              <div class="movie__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+               <div class="movie__description">
+                *IDENTITY
+                *SOCIAL
+                *LIFE SITUATIONS
+              </div>
+              <div class="movie__price">
+                <span class="movie__price--normal">$14.00</span>$10.00
+              </div>
+            </div>
+
+             <div class="movie">
+              <figure class="movie__img--wrapper">
+                <img class="movie__img" src="https://static0.colliderimages.com/wordpress/wp-content/uploads/2023/05/leonardo-dicaprio-joseph-gordon-levitt-inception-christopher-nolan.jpg?q=70&fit=crop&w=825&dpr=1" alt="">
+              </figure>
+              <div class="movie__title">
+                DRAMA
+              </div>
+              <div class="movie__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+               <div class="movie__description">
+                *SUSPENSE
+                *EXCITEMENT
+                *EXPERIENCES
+              </div>
+              <div class="movie__price">
+                <span class="movie__price--normal">$9.00</span>$5.00
+              </div>
+            <div>
+          </div>
+          <div>  
+            </body>
+        </section>
+  </section>
+
+
+
+           
+ <footer>
+    <div class="container">
+      <div class="row row__column">
+        <a href="#">
+          <figure class="footer__logo">
+            <img src="https://images.unsplash.com/photo-1535016120720-40c646be5580?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="footer__logo--img" alt="">
+          </figure>
+        </a>
+        <div class="footer__list">
+          <a href="#" class="footer__link">Top Trailers</a>
+          <a class="footer__link no-cursor">Top Scenes</a>
+          <a href="#features" class="footer__link">Movies</a>
+          <a class="footer__link no-cursor">Contact us</a>
+        </div>
+        <div class="footer__copyright">Copyright &copy;2025 Rombo X Movies</div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
+          
